@@ -1,0 +1,14 @@
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+    <div class="article">
+      <h1><%= @article.title %></h1>
+      <div class="links">
+        <%= link_to "", edit_article_path, :class=>"fas fa-pencil-alt" %>
+        <%= link_to "", article_path, :class=>"fas fa-trash-alt", method: :delete %>
+      </div>
+    </div>
+    <p><%= @article.content %></p>
+    <%= link_to 'Go back to main page', articles_path, :class=>'linki' %>
+  </div>
+</div>
+
